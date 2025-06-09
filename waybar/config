@@ -21,25 +21,25 @@
         //"hyprland/submap",
         "temperature",
         //"idle_inhibitor",
-        //"mpd"
+        //"mpd",
         "custom/spotify"
     ],
     "modules-center": [
         //"hyprland/window"
-        "clock#3",
-        "custom/weather"
+        "clock#3"
+        //"custom/weather"
         //"custom/gammastep"
     ],
     "modules-right": [
         "backlight",
-        "custom/storage",
+        //"custom/storage",
         "memory",
         "cpu",
         "battery",
 	"network",
         //"pulseaudio",
         "wireplumber",
-        "custom/screenshot_t",
+        //"custom/screenshot_t",
         "tray",
         "custom/power"
     ],

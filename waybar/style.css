@@ -31,23 +31,13 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 
-#workspaces button {
-    padding: 3px 5px;  /* Adjusted padding to reduce height */
-    margin: 3px 5px;    /* Reduced margin slightly */
-    border-radius: 6px;
-    color: @foreground;
-    background-color: #330F43;
-    transition: all 0.3s ease-in-out;
-    font-size: 13px;  /* Slightly smaller font size */
-}
-
 #workspaces button.active {
-    color: @foreground;
-    background: #C00EC7;
+    color: #da45cf;
+    background-color: rgba(192, 14, 199, 0.5);
 }
 
 #workspaces button:hover {
-    background: #732F87;
+    background-color: rgba(76, 27, 117, 0.3);
 }
 
 #workspaces button.urgent {
@@ -55,7 +45,8 @@ window#waybar.hidden {
 }
 
 #workspaces {
-    background-color: #4c1b75;
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3);
     border-radius: 14px;
     padding: 3px 6px;  /* Adjusted padding to reduce height */
 }
@@ -64,7 +55,7 @@ window#waybar.hidden {
     background-color: #111827;
     font-size: 15px;   /* Slightly smaller font size */
     font-weight: 800;
-    color: @foreground;
+    color: #da45cf;
     border-radius: 14px;
     padding: 3px 6px;  /* Reduced padding */
     margin: 2px;
@@ -100,6 +91,7 @@ window#waybar.hidden {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
+    color: #da45cf;
     background-color: #111827;
     border-radius: 14px;
     padding: 6px;  /* Adjusted padding */
@@ -112,43 +104,44 @@ window#waybar.hidden {
 }
 
 #custom-spotify {
-    background-color: #111827;
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3);
     border-radius: 14px;
     padding: 3px 12px;
 }
 
 #tray {
-    background-color: #111827;
+    background-color: rgba(76, 27, 117, 0.3);
     border-radius: 14px;
     padding: 6px;  /* Adjusted padding */
 }
 
 #cpu {
-    color: #fb958b;
-    background-color: #111827;
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3);
     padding: 6px;
 }
 
 #memory {
-    color: #ebcb8b;
-    background-color: #111827;
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3);
     padding: 6px;
 }
 
 #custom-power {
-    background-color: #111827;
+    background-color: rgba(76, 27, 117, 0.3) ;
     border-radius: 14px;
     padding: 6px;
 }
 
 #custom-storage {
-    background-color: #111827;
+    background-color: rgba(76, 27, 117, 0.3);
     border-radius: 14px;
     padding: 6px;
 }
 
 #custom-launcher {
-    background-color: #1b242b;
+    background-color: rgba(76, 27, 117, 0.3);
     color: #6a92d7;
     border-radius: 7.5px;
     padding: 3px 6px;  /* Adjusted padding */
@@ -182,7 +175,7 @@ window#waybar.hidden {
 }
 
 #custom-weather.default {
-    color: #dbd9d8;
+    color: rgba(76, 27, 117, 0.3);
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -196,25 +189,30 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    color: #7d9bba;
+    color: #8fbcbb;
+    background-color: rgba(76, 27, 117, 0.3) ;
 }
 
 #backlight {
-    color: #8fbcbb;
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3) ;
 }
 
 #clock {
-    color: #c8d2e0;
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3) ;
 }
 
 #battery {
-    color: #c0caf5;
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3) ;
 }
 
 #battery.charging,
 #battery.full,
 #battery.plugged {
     color: #26a65b;
+    background-color: rgba(76, 27, 117, 0.3) ;
 }
 
 @keyframes blink {
@@ -251,6 +249,7 @@ label:focus {
 
 #network {
     color: #b48ead;
+    background-color: rgba(76, 27, 117, 0.3) ;
 }
 
 #network.disconnected {
@@ -259,7 +258,7 @@ label:focus {
 
 #custom-media {
     background-color: #66cc99;
-    color: #2a5c45;
+    color: #da45cf;
     min-width: 100px;
 }
 
@@ -268,15 +267,21 @@ label:focus {
 }
 
 #custom-media.custom-vlc {
-    background-color: #ffa000;
+    background-color: #da45cf;
 }
 
 #temperature {
-    background-color: #f0932b;
-}
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3) ;}
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3) ;
+}
+
+#wireplumber {
+    color: #da45cf;
+    background-color: rgba(76, 27, 117, 0.3) ;
 }
 
 #tray > .passive {
