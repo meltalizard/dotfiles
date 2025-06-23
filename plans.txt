@@ -1,0 +1,21 @@
+ON LAPTOP
+Configure Hyprland on laptop
+use quickshell (replace waybar if possible)
+
+Wallust (For Color Palette)
+VirtuaVerse (For GRUB THEME) saved in "for ricing"
+Neofetch 
+Kitty
+Matugen (For Colors)
+
+
+
+
+
+
+ON DESKTOP
+Reset Windows 10 on PC
+Install VSCode, Git, Html, CSS, JavaScript, Python
+Build Website
+
+Install a VirtualMachine
