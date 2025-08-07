@@ -1,0 +1,12 @@
+august 5 commands: random disconnection fix
+sudo systemctl disable --now systemd-networkd.service
+sudo systemctl disable --now iwd.service
+
+// or use this:
+sudo systemctl disable --now NetworkManager.service
+sudo systemctl disable --now wpa_supplicant.service
+
+
+for clipboard shit
+x11 = xclip
+wayland = wl-clipboard
