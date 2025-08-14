@@ -2,7 +2,7 @@
   "layer": "top", "position": "top",
   "modules-left": ["custom/logo", "clock", "disk", "memory", "cpu", "temperature", "hyprland/window" ],
   "modules-center": [  "hyprland/workspaces"],
-  "modules-right": ["tray", "backlight", "idle_inhibitor", "custom/colorpicker", "bluetooth", "pulseaudio", "network",  "battery" ],
+  "modules-right": ["tray", "backlight", "idle_inhibitor", "bluetooth", "pulseaudio", "battery", "custom/wlogout"],
   "reload_style_on_change":true,
 
   "custom/logo": {
@@ -18,12 +18,11 @@
 		"3": "",
 		"4": "",
 		"5": "",
-		"6": "",
 		"active": "",
 		"default": "" 
 	},
        "persistent-workspaces": {
-         "*": [ 2, 3, 4, 5, 6 ]
+         "*": [ 1, 2, 3, 4, 5 ]
        }
 },
 
@@ -81,7 +80,7 @@
       "tooltip-format": "{ipaddr}",
       "tooltip-format-wifi": "{essid} ({signalStrength}%)  | {ipaddr}",
       "tooltip-format-ethernet": "{ifname} 🖧 | {ipaddr}",
-      "on-click": "networkmanager_dmenu"
+      "on-click": "nm-connection-editor"
     },
 
 "battery": {
@@ -104,6 +103,16 @@
           "󰁹"
         ],
     },
+
+"custom/wlogout": {
+    "format": "",  // this is a power icon (Font Awesome)
+    "tooltip": "Power Menu",
+    "on-click": "wlogout",
+    "interval": 86400  // update once a day (we're not changing text dynamically)
+},
+
+
+
 "backlight": {
   "device": "intel_backlight",
   "format": "<span font='12'>{icon}</span>",
@@ -189,13 +198,21 @@
     "phone": "",
     "portable": "",
     "car": "",
-    "default": ["🕨","🕩","🕪"]
+    "default": ["", "", " ", " "]
   },
   "justify": "center",
   "on-click": "amixer sset Master toggle",
   "on-click-right": "pavucontrol",
   "tooltip-format": "{icon}  {volume}%"
 },
+
+"custom/wifi-switch": {
+  "format": "Wi-Fi",
+  "exec": "echo 'Click to switch Wi-Fi'",
+  "on-click": "~/.config/waybar/scripts/switch-wifi.sh HomeWiFi",
+  "interval": 300
+},
+
 
 "jack": {
     "format": "{} 󱎔",
